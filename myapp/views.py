@@ -14,4 +14,5 @@ def home_view(request):
     """
     # Vous pouvez ajouter du contexte ici si nécessaire
     context = {}
-    return render(request, 'myapp/templates/myapp/home.html', context)
+    # Correction: Utiliser le chemin correct relatif au répertoire templates de l'app
+    return render(request, 'myapp/home.html', context)
